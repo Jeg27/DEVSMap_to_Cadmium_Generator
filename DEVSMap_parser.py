@@ -27,7 +27,7 @@ directory_code_main_output = './output/main/'
 # The remaining instructions are to run the parser, and no changes are 
 # required by the user
 
-# First, we construct the output filepath for the atomic/coupled models
+# First, we construct  the output filepath for the atomic/coupled models
 directory_code_include_output = directory_code_main_output + 'include/'
 
 # Next, we check that we have a valid set of input files.  This will check 

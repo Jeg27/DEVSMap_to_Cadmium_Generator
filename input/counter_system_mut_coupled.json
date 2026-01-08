@@ -1,0 +1,32 @@
+{
+    "counter_system": {
+        "x": {
+            "direction": "bool",
+            "increment": "int"
+        },
+        "y": {
+            "count": "int"
+        },
+        "components": {
+            "counter": "counter_model"
+        },
+        "eic": [{
+            "port_from": "direction",
+            "port_to": "direction_in",
+            "component_to": "counter_model"
+        },
+        {
+            "port_from": "increment",
+            "port_to": "increment_in",
+            "component_to": "counter_model"
+        }
+    ],
+        "eoc": [{
+            "port_from": "count_out",
+            "port_to": "count",
+            "component_from": "counter_model"
+        }],
+        "ic": []
+    },
+    "include_sets": ["default_sets.json"]
+}

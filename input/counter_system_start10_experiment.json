@@ -1,0 +1,26 @@
+{
+    "model_under_test": {
+        "model": "counter_system_mut_coupled.json",
+        "initial_state": "init/counter_mut_start10_init_state.json",
+        "parameters": ""
+    },
+    "experimental_frame": {
+        "model": "counter_system_ef_coupled.json",
+        "initial_state": "init/counter_ef_init_state.json",
+        "parameters": ""
+    },
+    "cpic":[
+        {
+        "port_from": "direction_out",
+        "port_to": "direction"
+        },
+        {
+        "port_from": "increment_out",
+        "port_to": "increment"
+        }],
+    "pocc": {
+        "port_from": "count",
+        "port_to": "count_in"        
+    },
+    "time_span": "50.0"
+}

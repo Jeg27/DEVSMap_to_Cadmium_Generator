@@ -1,0 +1,33 @@
+{
+    "counter_ef": {
+        "x": {
+            "count_in": "int"
+        },
+        "y": {
+            "direction_out": "bool",
+            "increment_out": "int"
+        },
+        "components": {
+            "generator_bool": "direction_generator",
+            "generator_int": "increment_generator",
+            "transducer": "counter_transducer"
+        },
+        "eic": [{
+            "port_from": "count_in",
+            "port_to": "count_in",
+            "component_to": "counter_transducer"
+        }],
+        "eoc": [{
+            "port_from": "bool_out",
+            "port_to": "direction_out",
+            "component_from": "direction_generator"
+        },
+        {
+            "port_from": "int_out",
+            "port_to": "increment_out",
+            "component_from": "increment_generator"
+        }],
+        "ic": []
+    },
+    "include_sets": ["default_sets.json"]
+}

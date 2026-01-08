@@ -1,0 +1,34 @@
+{
+    "generator_int": {
+        "s": {
+            "last_count": "int",
+            "sigma": "double"
+        },
+        "x": {
+            "count_in": "int"
+        },
+        "y": {},
+        "delta_ext": {
+            "count_in.bagSize() != 0": {
+                "last_count": "count_in.bag(-1)",
+                "sigma": "inf"
+            },
+            "otherwise": {}
+        },
+        "delta_int": {
+            "otherwise": {
+                "sigma": "inf"
+            }
+        },
+        "lambda": {
+            "otherwise": {}
+        },
+        "ta": {
+            "otherwise": "sigma"
+        }
+    },
+    "include_sets": [
+        "default_sets.json"
+    ],
+    "parameters": {}
+}

@@ -1,0 +1,21 @@
+{
+    "init_states": {
+        "counter_ef": {
+            "generator_bool": {
+                "nextBool": "false",
+                "sigma": "13.0"
+            },
+            "generator_int": {
+                "nextInt": "1",
+                "sigma": "3.0"
+            },
+            "transducer": {
+                "last_count": "0",
+                "sigma": "inf"
+            }
+        }
+    }
+
+}
+
+

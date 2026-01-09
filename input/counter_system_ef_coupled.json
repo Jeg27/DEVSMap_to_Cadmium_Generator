@@ -7,11 +7,12 @@
             "direction_out": "bool",
             "increment_out": "int"
         },
-        "components": {
-            "generator_bool": "direction_generator",
-            "generator_int": "increment_generator",
-            "transducer": "counter_transducer"
-        },
+
+        "components": [
+            { "model": "generator_bool", "id": "direction_generator" },
+            { "model": "generator_int", "id": "increment_generator" },
+            { "model": "transducer", "id": "counter_transducer" }
+        ],
         "eic": [{
             "port_from": "count_in",
             "port_to": "count_in",

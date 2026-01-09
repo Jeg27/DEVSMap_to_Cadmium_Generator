@@ -1,7 +1,7 @@
 {
     "model_under_test": {
         "model": "counter_system_mut_coupled.json",
-        "initial_state": "init/counter_mut_start0_init_state.json",
+        "initial_state": "init/counter_mut_start10_dec_init_state.json",
         "parameters": ""
     },
     "experimental_frame": {

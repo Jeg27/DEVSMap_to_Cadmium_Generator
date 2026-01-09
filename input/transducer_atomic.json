@@ -1,5 +1,5 @@
 {
-    "generator_int": {
+    "transducer": {
         "s": {
             "last_count": "int",
             "sigma": "double"

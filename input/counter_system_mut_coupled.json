@@ -7,24 +7,25 @@
         "y": {
             "count": "int"
         },
-        "components": {
-            "counter": "counter_model"
-        },
+        "components":[
+            { "model": "counter", "id": "counterA" }
+
+        ],
         "eic": [{
             "port_from": "direction",
             "port_to": "direction_in",
-            "component_to": "counter_model"
+            "component_to": "counterA"
         },
         {
             "port_from": "increment",
             "port_to": "increment_in",
-            "component_to": "counter_model"
+            "component_to": "counterA"
         }
     ],
         "eoc": [{
             "port_from": "count_out",
             "port_to": "count",
-            "component_from": "counter_model"
+            "component_from": "counterA"
         }],
         "ic": []
     },

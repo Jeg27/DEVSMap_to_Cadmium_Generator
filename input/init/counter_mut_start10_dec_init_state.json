@@ -1,0 +1,12 @@
+{
+    "init_states": {
+        "counter_system": {
+            "counterA": {
+                "count": "10",
+                "increment": "1",
+                "countUp": "false",
+                "sigma": "inf"
+            }
+        }
+    }
+}
